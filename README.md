@@ -31,13 +31,13 @@ loopdesk-assignment/
    cd Loopdesk-assigment
 Install dependencies:
 
-```bash
+   ```bash
 npm install
 
 Usage
 To run the app locally:
 
-```bash
+   ```bash
 npm start
 Open your browser at http://localhost:3000.
 
@@ -45,9 +45,4 @@ Upload or load a video file.
 
 The app should automatically generate highlights, captions, and basic edits using AI workflows inspired by Loopdesk’s intelligent video processing.
 
-
-
-
-
-## Project Structure
 
