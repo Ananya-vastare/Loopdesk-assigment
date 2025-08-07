@@ -14,19 +14,14 @@ This assignment implements core editing features inspired by Loopdesk:
 
 ---
 ## Project Structure
+ ```bash
 loopdesk-assignment/
 ├── public/
-
 │ └── [static assets, icons, etc.]
-
 ├── src/
-
 │ ├── components/
-
 │ ├── App.tsx
-
 │ └── timeline/
-
 └── README.md
 
 ## Installation
