@@ -1,72 +1,53 @@
-# Loopdesk-assigment
-This is the assignment for the loopdesk frontend recruitement drive
+# Loopdesk Assignment
 
-# React + TypeScript + Vite
+**Loopdesk** is a browser-based AI video editor that automates everything from basic edits to studio-level VFX using pre-trained workflows and intelligent prompts. It supports specialized features across different content types like podcasts, tutorials, and vlogs, allowing creators to produce polished videos with minimal manual effort. :contentReference[oaicite:0]{index=0}
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This assignment implements core editing features inspired by Loopdesk:
 
-## Expanding the ESLint configuration
+- **Automated Trimming & Edits** – Remove silences, filler words, and irrelevant segments.
+- **Smart Focus & Highlights** – Detects key moments and applies zooms or split-screen highlights.
+- **Captioning & Summaries** – Auto-generate captions with speaker tagging and summary content.
+- **Export & Asset Generation** – Export edited video along with thumbnail, title, and description suggestions.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
+## Project Structure
+loopdesk-assignment/
+├── public/
+│ └── [static assets, icons, etc.]
+├── src/
+│ ├── components/
+│ ├── App.tsx
+│ └── timeline/
+└── README.md
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ananya-vastare/Loopdesk-assigment.git
+   cd Loopdesk-assigment
+Install dependencies:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Usage
+To run the app locally:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm start
+Open your browser at http://localhost:3000.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Upload or load a video file.
+
+The app should automatically generate highlights, captions, and basic edits using AI workflows inspired by Loopdesk’s intelligent video processing.
+
+
+
+
+
+## Project Structure
+
