@@ -1,0 +1,91 @@
+.timeline-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.timeline-bar {
+    position: relative;
+    height: 14px;
+    background-color: #2c2c2e;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #3b82f6;
+    z-index: 3;
+}
+
+.segment {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.5;
+    pointer-events: none;
+    border-radius: 4px;
+}
+
+.segment.silent {
+    background-color: #64748b;
+}
+
+.segment.highlight {
+    background-color: #10b981;
+}
+
+.key-moment-dot {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #facc15;
+    z-index: 4;
+}
+
+.playhead {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: red;
+    z-index: 5;
+}
+
+.time-marker-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding: 0 4px;
+    font-size: 10px;
+    color: #9ca3af;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.time-marker {
+    flex: 1;
+    text-align: center;
+}
+
+.control-button {
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
