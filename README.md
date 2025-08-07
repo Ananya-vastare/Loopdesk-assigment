@@ -32,9 +32,10 @@ loopdesk-assignment/
    ```bash
    git clone https://github.com/Ananya-vastare/Loopdesk-assigment.git
    cd Loopdesk-assigment
-```
-2.Install dependencies:
+   ```
 
+   
+2.Install dependencies:
 ```bash
 npm install
 ```
